@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleOutput"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:text="Transaksi Belanja"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OutputNama"
+        android:text="Nama Barang"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/titleOutput"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OutputJumlah"
+        android:text="Jumlah Barang"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/OutputNama"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OutputHarga"
+        android:text="Harga Satuan"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/OutputJumlah"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Outputtotal"
+        android:text="Jumlah"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/OutputHarga"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>
